@@ -1,6 +1,31 @@
 $(document).one('pageinit',function(){
+  //display runs
+  showruns();
+
+
+
   //Add Handler
   $('#sumbitAdd').on('tap',addRun);
+
+
+  /*
+
+   *Show all runs on HOMEPAGE
+    */
+    showRuns(){
+      //get runs addRunObject
+      var runs = getRunsObject();
+
+      //Check if empty
+         if(runs != '' && runs != null){
+            for(var i = 0;i < runs.length;i++){
+              ('#stats').append('<li class="ui-body-inherit ui-li-static"></li>');
+            }
+          }
+
+
+
+}
 
    /*
     * Add a run
