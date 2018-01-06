@@ -19,7 +19,7 @@ $(document).one('pageinit',function(){
       //Check if empty
          if(runs != '' && runs != null){
             for(var i = 0;i < runs.length;i++){
-              ('#stats').append('<li class="ui-body-inherit ui-li-static"></li>');
+              ('#stats').append('<li class="ui-body-inherit ui-li-static"><strong>Date:</strong></li>');
             }
           }
 
